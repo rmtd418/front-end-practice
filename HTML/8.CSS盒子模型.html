@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子模型</title>
+
+<style>
+    .demo {
+        background-color: palegoldenrod;
+        display: inline-block;
+        border: 5px solid blue;
+    }
+    .demo-border {
+        border-color: indigo;
+        background-color: red;
+        width: 500px;
+        height: 200px;
+        border-style:  solid dashed dotted double;
+        border-width: 20px 10px 30px 40px ;
+        /* 边框遵循     上   右   下   左 （顺时针顺序）  没上找下，没左找右*/
+    }
+    .demo2 {
+        background-color: aqua;
+        display: block;
+        width: 200px; 
+        height: 200px;
+        border-left: 20px dashed #255;   
+         /* 单独调节一边 ^  */
+    }
+</style>
+
+</head>
+<body>
+    <p class="demo">我是rmtd</p>
+    <h1 class="demo-border">这是一个边框示例</h1>
+    <a class="demo2">这也是一个边框示例</a>
+
+</body>
+</html>

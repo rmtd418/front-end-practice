@@ -1,0 +1,22 @@
+以下是这些单词在HTML中的中文意思：
+ 
+1.charset ：字符集
+2.body ：主体（指HTML文档的主体部分）
+3.radio ：单选框
+4.type ：类型
+5.label ：标签
+6.width ：宽度
+7.height ：高度
+8.src ：源（用于指定图像、脚本等资源的来源路径）
+9.href ：超链接引用（用于指定链接的目标地址）
+10.target ：目标（用于指定链接打开的目标位置，如在新窗口打开等）
+11.border ：边框
+12.table header ：表格表头
+13.table data ：表格数据（单元格内容）
+14.table row ：表格行
+15.placeholder ：占位符（在输入框等元素中显示的提示文本）
+16.value值
+17.action :
+18.pixel[px] :像素
+19.class :
+20.style :样式

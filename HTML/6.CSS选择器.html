@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS选择器</title>
+    <style>
+        /* 元素选择器（选择元素） */
+        h1 {
+            color: aquamarine;
+            font-size: 18px;
+        }
+        /* 类选择器（.加标签） */
+        .highlight {
+            background-color: blanchedalmond;
+        }
+        /* ID选择器（用#，#相当于id） */
+        /* id 在 HTML 中是唯一标识符，同一个页面中不能有重复的 id这会导致 CSS 或 JavaScript 通过 id 选择元素时出现不可预期的问题 */
+        #header {
+            background-color: aqua;
+            font-size: 20px;
+        }
+        /* 通用选择器(用*) */
+        * {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: 2000;
+        }
+        /* 这是子元素选择器 */
+        /* 我定义s为class就一定一定一定要加 . （这个点相当于class）不然会认成<s> */
+        .father > .son {
+            color: brown;
+            font-weight: 100;
+        }
+        /* 后代选择器（直接空格） */
+        .father h3 {
+            background-color: palegoldenrod;
+        }
+        /* 相邻元素选择器 */
+        /* 同一级别下紧跟在选中元素后的元素(用 + ) */
+        h3 + p {
+            background-color: burlywood;
+        }
+        /* 伪类选择器 */
+        #sss:hover {
+            background-color: hotpink;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>不同类型的CSS选择器</h1>
+    <h2 class="highlight">这是一个类选择器示例</h2>
+    <h2>这是另一个类选择器示例</h2>
+    <h3 id="header">这是一个ID选择器</h3>
+    <div class="father">
+        <h3 class="son">这是一个子选择器</h3>
+        <div class="h">
+            <h3 class="h">这是一个后代选择器</h3>
+        </div>
+    </div>
+
+    <p>这是一个普通的p标签</p>
+    <h3>这是一个相邻的兄弟选择器</h3>
+    <p>这是另一个一个普通的p标签</p>
+    
+    <h3 id="sss"> 这是一个伪类选择器 </h3>
+
+</body>
+</html>
+
+<!-- id和class -->
+ <!-- ID>类>标签名 -->
+
